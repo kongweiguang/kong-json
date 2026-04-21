@@ -65,8 +65,8 @@ public final class Json {
      * @param value 待序列化的对象
      * @return 格式化 JSON 字符串；当 value 为 null 时返回 null
      */
-    public static String strPretty(Object value) {
-        return codec().strPretty(value);
+    public static String pretty(Object value) {
+        return codec().pretty(value);
     }
 
     /**
@@ -83,7 +83,7 @@ public final class Json {
      * 将对象转换为目标类型。
      *
      * @param value 源对象
-     * @param type 目标类型
+     * @param type  目标类型
      * @return 转换后的对象；当 value 或 type 为 null 时返回 null
      */
     public static <T> T cvt(Object value, Class<T> type) {
@@ -94,7 +94,7 @@ public final class Json {
      * 将对象转换为目标泛型类型。
      *
      * @param value 源对象
-     * @param type 目标泛型类型引用
+     * @param type  目标泛型类型引用
      * @return 转换后的对象；当 value 或 type 为 null 时返回 null
      */
     public static <T> T cvt(Object value, TypeReference<T> type) {
@@ -105,7 +105,7 @@ public final class Json {
      * 将对象转换为指定的 Jackson JavaType。
      *
      * @param value 源对象
-     * @param type 目标 JavaType
+     * @param type  目标 JavaType
      * @return 转换后的对象；当 value 或 type 为 null 时返回 null
      */
     public static <T> T cvt(Object value, JavaType type) {
@@ -115,7 +115,7 @@ public final class Json {
     /**
      * 创建 Jackson 参数化类型。
      *
-     * @param parametrized 原始类型
+     * @param parametrized   原始类型
      * @param parameterTypes 泛型参数类型
      * @return Jackson JavaType
      */
@@ -126,7 +126,7 @@ public final class Json {
     /**
      * 将对象转换为指定元素类型的列表。
      *
-     * @param value 源对象
+     * @param value       源对象
      * @param elementType 元素类型
      * @return 转换后的列表；当 value 为 null 时返回 null
      */
@@ -142,7 +142,7 @@ public final class Json {
      * 将对象转换为指定泛型类型的列表。
      *
      * @param value 源对象
-     * @param type 列表泛型类型引用
+     * @param type  列表泛型类型引用
      * @return 转换后的列表；当 value 或 type 为 null 时返回 null
      */
     public static <T> List<T> list(Object value, TypeReference<List<T>> type) {
@@ -152,8 +152,8 @@ public final class Json {
     /**
      * 将对象转换为指定键值类型的 Map。
      *
-     * @param value 源对象
-     * @param keyType 键类型
+     * @param value     源对象
+     * @param keyType   键类型
      * @param valueType 值类型
      * @return 转换后的 Map；当 value 为 null 时返回 null
      */
@@ -169,7 +169,7 @@ public final class Json {
      * 将对象转换为指定泛型类型的 Map。
      *
      * @param value 源对象
-     * @param type Map 泛型类型引用
+     * @param type  Map 泛型类型引用
      * @return 转换后的 Map；当 value 或 type 为 null 时返回 null
      */
     public static <K, V> Map<K, V> map(Object value, TypeReference<Map<K, V>> type) {
@@ -189,7 +189,7 @@ public final class Json {
     /**
      * 按指定编码读取 JSON 文件。
      *
-     * @param path 文件路径
+     * @param path    文件路径
      * @param charset 文件编码
      * @return 解析后的 JSON 节点
      */
@@ -210,7 +210,7 @@ public final class Json {
     /**
      * 按指定编码读取 JSON Lines 文件，空行会被忽略。
      *
-     * @param path 文件路径
+     * @param path    文件路径
      * @param charset 文件编码
      * @return 每行解析得到的 JSON 节点列表
      */

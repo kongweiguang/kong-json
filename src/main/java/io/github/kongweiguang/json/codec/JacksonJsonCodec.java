@@ -64,7 +64,7 @@ public final class JacksonJsonCodec implements JsonCodec {
      * @return 格式化 JSON 字符串；当 value 为 null 时返回 null
      */
     @Override
-    public String strPretty(Object value) {
+    public String pretty(Object value) {
         if (value == null) {
             return null;
         }

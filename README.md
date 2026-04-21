@@ -147,7 +147,7 @@ System.out.println(array.get(5).asText());   // 66
 
 ## 3. 序列化和格式化输出
 
-`Json.str` 输出紧凑 JSON，`Json.strPretty` 输出格式化 JSON。
+`Json.str` 输出紧凑 JSON，`Json.pretty` 输出格式化 JSON。
 
 ```java
 User user = new User()
@@ -158,7 +158,7 @@ User user = new User()
 String json = Json.str(user);
 // {"name":"kong","age":1,"hobby":["j","n"]}
 
-String pretty = Json.strPretty(user);
+String pretty = Json.pretty(user);
 System.out.println(pretty);
 ```
 
@@ -265,7 +265,7 @@ List<JsonNode> lines = Json.readLines(Path.of("sample.jsonl"));
 
 ```java
 Json.str(null);                       // null
-Json.strPretty(null);                 // null
+Json.pretty(null);                    // null
 Json.cvt(null, User.class);           // null
 Json.list(null, User.class);          // null
 Json.map(null, String.class, Object.class); // null

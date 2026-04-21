@@ -33,7 +33,7 @@ public interface JsonCodec {
      * @param value 待序列化的对象
      * @return 格式化 JSON 字符串；当 value 为 null 时返回 null
      */
-    String strPretty(Object value);
+    String pretty(Object value);
 
     /**
      * 解析 JSON 字符串。

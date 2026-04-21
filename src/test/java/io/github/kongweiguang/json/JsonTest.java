@@ -116,7 +116,7 @@ class JsonTest {
     void stringifySerializesStringsAsJsonStrings() {
         assertEquals("\"kong\"", Json.str("kong"));
         assertEquals("{\"name\":\"kong\",\"age\":1,\"hobby\":[\"j\",\"n\"]}", Json.str(user));
-        assertTrue(Json.strPretty(user).contains(System.lineSeparator()));
+        assertTrue(Json.pretty(user).contains(System.lineSeparator()));
     }
 
     @Test
@@ -211,7 +211,7 @@ class JsonTest {
     @Test
     void conversionApisHandleNullInputsConsistently() {
         assertNull(Json.str(null));
-        assertNull(Json.strPretty(null));
+        assertNull(Json.pretty(null));
         assertNull(Json.cvt(null, User.class));
         assertNull(Json.cvt(null, new TypeReference<List<User>>() {
         }));
