@@ -1,11 +1,11 @@
-package io.github.kongweiguang.json.codec;
+package io.github.kongweiguang.v1.json.codec;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import io.github.kongweiguang.json.exception.JsonException;
+import io.github.kongweiguang.v1.json.exception.JsonException;
 
 import java.io.IOException;
 import java.util.Objects;

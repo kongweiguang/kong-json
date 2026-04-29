@@ -1,11 +1,11 @@
-package io.github.kongweiguang.json.builder;
+package io.github.kongweiguang.v1.json.builder;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.NullNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
-import io.github.kongweiguang.json.Json;
+import io.github.kongweiguang.v1.json.Json;
 
 /**
  * JSON 构建器的值转换工具，负责把 Java 值写入 Jackson 节点。

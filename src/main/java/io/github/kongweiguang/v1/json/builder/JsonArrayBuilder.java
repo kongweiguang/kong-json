@@ -1,7 +1,7 @@
-package io.github.kongweiguang.json.builder;
+package io.github.kongweiguang.v1.json.builder;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import io.github.kongweiguang.json.Json;
+import io.github.kongweiguang.v1.json.Json;
 
 import java.util.Collection;
 import java.util.List;

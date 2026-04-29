@@ -17,7 +17,7 @@
 主要入口类：
 
 ```java
-import io.github.kongweiguang.json.Json;
+
 ```
 
 后续示例会用到下面两个简单模型：
@@ -98,7 +98,7 @@ public class Person {
 
 ```java
 import com.fasterxml.jackson.databind.JsonNode;
-import io.github.kongweiguang.json.Json;
+import io.github.kongweiguang.v1.json.Json;
 
 import java.math.BigDecimal;
 
@@ -112,8 +112,16 @@ JsonNode node = Json.object()
         .putString("literalNumber", 1)
         .toNode();
 
-System.out.println(node.get("age").isInt());          // true
-System.out.println(node.get("literalNumber").asText()); // 1
+System.out.
+
+println(node.get("age").
+
+isInt());          // true
+        System.out.
+
+println(node.get("literalNumber").
+
+asText()); // 1
 ```
 
 也可以直接输出 JSON 字符串：

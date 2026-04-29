@@ -1,8 +1,8 @@
-package io.github.kongweiguang.json.file;
+package io.github.kongweiguang.v1.json.file;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import io.github.kongweiguang.json.Json;
-import io.github.kongweiguang.json.exception.JsonException;
+import io.github.kongweiguang.v1.json.Json;
+import io.github.kongweiguang.v1.json.exception.JsonException;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

@@ -1,4 +1,4 @@
-package io.github.kongweiguang.json.codec;
+package io.github.kongweiguang.v1.json.codec;
 
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;

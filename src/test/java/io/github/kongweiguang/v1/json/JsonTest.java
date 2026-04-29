@@ -1,12 +1,12 @@
-package io.github.kongweiguang.json;
+package io.github.kongweiguang.v1.json;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import io.github.kongweiguang.json.builder.JsonArrayBuilder;
-import io.github.kongweiguang.json.builder.JsonObjectBuilder;
-import io.github.kongweiguang.json.codec.JsonCodec;
-import io.github.kongweiguang.json.exception.JsonException;
+import io.github.kongweiguang.v1.json.builder.JsonArrayBuilder;
+import io.github.kongweiguang.v1.json.builder.JsonObjectBuilder;
+import io.github.kongweiguang.v1.json.codec.JsonCodec;
+import io.github.kongweiguang.v1.json.exception.JsonException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;

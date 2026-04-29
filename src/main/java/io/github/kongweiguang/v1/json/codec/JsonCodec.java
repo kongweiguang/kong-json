@@ -1,4 +1,4 @@
-package io.github.kongweiguang.json.codec;
+package io.github.kongweiguang.v1.json.codec;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JavaType;

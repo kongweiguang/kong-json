@@ -1,4 +1,4 @@
-package io.github.kongweiguang.json.exception;
+package io.github.kongweiguang.v1.json.exception;
 
 /**
  * kong-json 在解析、序列化、类型转换或文件读取失败时抛出的运行时异常。
